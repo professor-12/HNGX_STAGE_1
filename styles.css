@@ -121,6 +121,13 @@ a {
     border: none;
 }
 
+img {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+
 body {
     background: var(--special-color);
 }
@@ -193,6 +200,7 @@ header > div {
         row-gap: 1rem;
         column-gap: 1rem;
     }
+
     .main__goal1 {
         width: 100%;
         margin: 0 auto;
