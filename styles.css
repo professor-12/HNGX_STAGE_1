@@ -1,0 +1,222 @@
+:root {
+    --special-color: #202124;
+    --slate: #2d2e31;
+    --active-blue: #cddffc;
+    --active-dark-blue: #1c4f93;
+    --slate-500: #2f3031;
+    --card-slate: #313235;
+}
+
+.intro {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content {
+    color: #d0d6ddd4;
+    margin-top: 12px;
+}
+
+.grid__card__child {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+svg {
+    width: 4rem;
+    height: 4rem;
+}
+.title {
+    text-align: center;
+    max-width: 53rem;
+    line-height: 3.6rem;
+    margin: 4rem auto;
+    font-size: 3rem;
+    animation: textAnimation 1.3s ease-in-out;
+}
+
+footer > div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    background: var(--active-blue);
+    height: auto;
+    width: auto;
+    padding: 0.8rem;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.grid__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.main__goal1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 8rem 0rem 0rem 0rem;
+    gap: 12rem;
+}
+
+.grid__main > div {
+    padding: auto;
+    background: var(--card-slate);
+    height: 14rem;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+button,
+main {
+    padding: 0rem 3rem;
+}
+.main__introduction::before {
+    content: "Introduction";
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    display: block;
+    color: white;
+}
+
+.main__introduction {
+    max-width: 60%;
+    line-height: 2.6rem;
+    font-size: 1.4rem;
+    color: #9aa0a6;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background: none;
+    border: none;
+}
+
+body {
+    background: var(--special-color);
+}
+
+header {
+    background: var(--slate);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 13px;
+}
+
+@media (max-width: 1500px) {
+    .intro {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    footer > div {
+        width: 100%;
+        margin: 0 auto;
+        padding: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+@media (max-width: 1000px) {
+    .title {
+        text-align: center;
+        max-width: 40rem;
+        line-height: 3rem;
+        margin: 4rem auto;
+        font-size: 2rem;
+        animation: textAnimation 1.3s ease-in-out;
+    }
+    .main__introduction::before {
+        content: "Introduction";
+        font-size: 2rem;
+        padding: 1rem 0rem;
+        display: block;
+        color: white;
+    }
+
+    .main__introduction {
+        max-width: 100%;
+        line-height: 2rem;
+        font-size: 1rem;
+        color: #9aa0a6;
+    }
+    .grid__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+    .main__goal1 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 8rem 0rem 0rem 0rem;
+        gap: 12rem;
+    }
+    .grid__main > div {
+        padding: auto;
+        background: var(--card-slate);
+        height: 16rem;
+    }
+    .heading {
+        font-size: 1.3rem;
+    }
+    header > div {
+        width: 100%;
+    }
+    .link {
+        background: none;
+
+        height: auto;
+        width: auto;
+        padding: 0.1rem;
+        color: var(--active-blue);
+        font-size: 0.7rem;
+    }
+}
