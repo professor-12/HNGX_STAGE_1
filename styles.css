@@ -121,13 +121,6 @@ a {
     border: none;
 }
 
-img {
-    width: auto;
-    height: auto;
-    max-width: none;
-    max-height: none;
-}
-
 body {
     background: var(--special-color);
 }
