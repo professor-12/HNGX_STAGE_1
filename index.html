@@ -15,12 +15,12 @@
     <body>
         <header>
             <div>
-                <h1 data-testid="html.tsx" class="heading">html.tsx</h1>
+                <h1 data-testid="slackDisplayName" class="heading">html.tsx</h1>
                 <div style="display: flex; align-items: center; gap: 0.4rem">
                     <a
                         class="link"
                         title="Expert Courses Just For You"
-                        data-testid="https://www.hng.tech/learn"
+                        data-testid="hngLink"
                         href="https://www.hng.tech/learn"
                         target="_blank"
                         >Join HNGX</a
@@ -29,7 +29,7 @@
                     <a
                         class="link"
                         title="Scrape any website, right from your desktop"
-                        data-testid="https://www.scrapeanyweb.site"
+                        data-testid="scrapeanywebLink"
                         href="https://www.scrapeanyweb.site"
                         target="_blank"
                         >Web Scraping</a
@@ -43,7 +43,7 @@
                         "
                         class="link"
                         title="The Quickest Way to Dominate Search Rankings"
-                        data-testid="https://www.keyword.dog"
+                        data-testid="keywordLink"
                         href="https://www.keyword.dog"
                         target="_blank"
                         >Keyword</a
@@ -606,23 +606,24 @@
             </div>
         </main>
         <br />
+
         <br />
         <br />
         <footer style="background: #2f2f2f">
             <div>
                 <p>
                     Email:
-                    <span data-testid="badejoemanuel805@gmail.com"
+                    <span data-testid="slackEmail"
                         >badejoemanuel805@gmail.com</span
                     >
                 </p>
                 <p>
                     Day of the week:
-                    <span data-testid="" id="currentDay"></span>
+                    <span data-testid="currentDay" id="currentDay"></span>
                 </p>
                 <p>
                     Current-Time:
-                    <span data-testid="" id="currentTime"></span>
+                    <span data-testid="currentTimeUTC" id="currentTime"></span>
                 </p>
             </div>
         </footer>
