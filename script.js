@@ -3,7 +3,11 @@ const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 
 
 
-document.querySelector("#currentDay").textContent = daysOfWeek[date.getDay()]
+const dateNode = document.querySelector("#currentDay")
+      
+      
+      
+      dateNode.textContent = daysOfWeek[date.getDay()]
 
 
 const time = document.querySelector("#currentTime")
@@ -12,6 +16,9 @@ time.textContent = date.toUTCString()
 
 
 setInterval(() => {
+      dateNode.setAttribute("data-testid",daysOfWeek[date.getDay()]
+)
       let date = new Date();
       time.textContent = date.toUTCString()
+      time.setAttribute("data-testid",date.toUTCString())
 },10)
